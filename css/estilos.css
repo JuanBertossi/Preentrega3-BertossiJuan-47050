@@ -1,0 +1,551 @@
+@charset "UTF-8";
+/* Importaciones */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@300;500 & display=swap");
+@import url("https://coolors.co/ba2d0b-d5f2e3-73ba9b-003e1f-01110a");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Feliz+Mono & display=swap");
+/* Reset */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* Tamaño y color BODY, HTML */
+html {
+  background-color: aliceblue;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Header GLOBAL */
+header {
+  grid-area: header;
+  height: auto;
+  background-color: black;
+}
+header .IMGLOGO {
+  display: flex;
+  justify-content: center;
+}
+header .IMGLOGO .IMGLOGO2 {
+  width: 475px;
+  height: 200px;
+}
+header h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
+header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: smaller;
+  text-align: center;
+  color: aliceblue;
+}
+header nav .Links {
+  display: flex;
+  list-style-type: none;
+  font-family: fantasy;
+  font-size: 1rem;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.carritoProductos {
+  font-family: "Poppins", sans-serif;
+}
+
+.carritoTotal {
+  font-family: "Poppins", sans-serif;
+}
+
+.imagenCarrito {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+
+/* Main GLOBAL */
+main {
+  grid-area: main;
+}
+main h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: smaller;
+  text-align: center;
+  color: aliceblue;
+}
+
+/* GPUS */
+.bodyGPUS {
+  background-color: #ff7878;
+  background-image: linear-gradient(315deg, #ff7878 0%, #74d680 74%);
+  display: grid;
+  grid-template-rows: 0.2fr 14fr 0.2fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer";
+}
+.bodyGPUS .mainGPUS {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 0.5fr repeat(2, 1fr);
+  grid-template-areas: "ParrafoAMD rx5 rx5" "main rx67 rx67" "main otros otros" "main otros2 otros2" "main rtx12 rtx12" "main rtx34 rtx34" "main otrasNvidia otrasNvidia" "main otrasNvidia2 otrasNvidia2";
+}
+.bodyGPUS .mainGPUS p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: black;
+  background-color: azure;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.bodyGPUS .mainGPUS .ParrafoGPUS {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  grid-area: ParrafoAMD;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: black;
+  border-radius: 5px;
+  height: 200px;
+}
+.bodyGPUS .mainGPUS .RX5 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: rx5;
+}
+.bodyGPUS .mainGPUS .RX5 .SeriesRX500 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 275px;
+  height: 210px;
+}
+.bodyGPUS .mainGPUS .RX5 .W6600 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 200px;
+}
+.bodyGPUS .mainGPUS .RX67 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: rx67;
+}
+.bodyGPUS .mainGPUS .RX67 .SeriesRX6000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 300px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .RX67 .AMDVII {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 300px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .OTRAS {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: otros;
+}
+.bodyGPUS .mainGPUS .OTRAS .W7900 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 500px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 500px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .OTRAS2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: otros2;
+}
+.bodyGPUS .mainGPUS .OTRAS2 .RX580 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 500px;
+}
+.bodyGPUS .mainGPUS .OTRAS2 .SeriesRX5000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 400px;
+}
+.bodyGPUS .mainGPUS .RTX12 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: rtx12;
+}
+.bodyGPUS .mainGPUS .RTX12 .RTX1000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 250px;
+}
+.bodyGPUS .mainGPUS .RTX12 .RTX2000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .RTX34 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: rtx34;
+}
+.bodyGPUS .mainGPUS .RTX34 .RTX3000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 450px;
+  height: 250px;
+}
+.bodyGPUS .mainGPUS .RTX34 .RTX4000 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 500px;
+  height: 250px;
+}
+.bodyGPUS .mainGPUS .otrasNvidia {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-area: otrasNvidia;
+}
+.bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 450px;
+  height: 275px;
+}
+.bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 420px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .otrasNvidia2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 75px;
+  grid-area: otrasNvidia2;
+}
+.bodyGPUS .mainGPUS .otrasNvidia2 .RTXA4500 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 300px;
+}
+.bodyGPUS .mainGPUS .otrasNvidia2 .RTX2080 {
+  border: 2px solid rgb(170, 161, 161);
+  background-color: white;
+  width: 400px;
+  height: 300px;
+}
+
+/* Footer GLOBAL */
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  font-size: 20px;
+  margin-top: auto;
+}
+footer .Copyright {
+  font-family: "Poppins", sans-serif;
+  display: inline;
+  color: black;
+  font-size: 16px;
+}
+footer .CopyrightLogo {
+  width: 25px;
+  height: 15px;
+}
+footer .LogoWhatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 50px;
+  height: 45px;
+}
+footer .LogoInstagram {
+  position: fixed;
+  bottom: 21px;
+  right: 65px;
+  width: 80px;
+  height: 60px;
+}
+
+/* MQ Header */
+
+@media (max-width: 480px) {
+  header .IMGLOGO .IMGLOGO2 {
+    width: 365px;
+    height: 175px;
+  }
+}
+@media (max-width: 360px) {
+  header .IMGLOGO .IMGLOGO2 {
+    width: 330px;
+    height: 170px;
+  }
+}
+
+/* MQ Gpus */
+
+@media (max-width: 1400px) {
+  .bodyGPUS .mainGPUS .ParrafoGPUS {
+    height: 350px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
+    width: 450px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bodyGPUS .mainGPUS .ParrafoGPUS {
+    height: 300px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
+    width: 400px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS .W7900 {
+    width: 425px;
+    height: 225px;
+  }
+  .bodyGPUS .mainGPUS .RTX34 .RTX3000 {
+    width: 400px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .RTX34 .RTX4000 {
+    width: 400px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
+    width: 425px;
+    height: 250px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
+    width: 375px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS .W7900 {
+    width: 375px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS2 .RX580 {
+    width: 350px;
+    height: 450px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS2 .SeriesRX5000 {
+    width: 350px;
+    height: 350px;
+  }
+  .bodyGPUS .mainGPUS .RTX12 .RTX2000 {
+    width: 375px;
+    height: 300px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia2 .RTX2080 {
+    width: 375px;
+    height: 300px;
+  }
+  .bodyGPUS .mainGPUS .RTX34 .RTX3000 {
+    width: 400px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .RTX34 .RTX4000 {
+    width: 375px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
+    width: 425px;
+    height: 250px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
+    width: 350px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bodyGPUS .mainGPUS {
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "ParrafoAMD rx5" "main rx67" "main otros" "main otros2" "main rtx12" "main rtx34" "main otrasNvidia" "main otrasNvidia2";
+  }
+  .bodyGPUS .mainGPUS .ParrafoGPUS {
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .RX5 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .RX67 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .OTRAS {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .OTRAS2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .RTX12 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .RTX34 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .bodyGPUS .mainGPUS .ParrafoGPUS {
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .bodyGPUS {
+    grid-template-rows: 0.1fr 30fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .bodyGPUS .mainGPUS {
+    grid-template-rows: 0.1fr repeat(8, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "ParrafoAMD" "rx5" "rx67" "otros" "otros2" "rtx12" "rtx34" "otrasNvidia" "otrasNvidia2";
+  }
+  .bodyGPUS .mainGPUS .ParrafoGPUS {
+    height: 100px;
+  }
+}
+@media (min-width: 360px) and (max-width: 426px) {
+  .bodyGPUS .mainGPUS .ParrafoGPUS {
+    margin-left: 20px;
+    width: 320px;
+    height: 120px;
+  }
+  .bodyGPUS .mainGPUS p {
+    width: 250px;
+  }
+  .bodyGPUS .mainGPUS .RX5 .W6600 {
+    width: 300px;
+    height: 150px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS .W7900 {
+    width: 300px;
+    height: 170px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS .SeriesRX7000 {
+    width: 300px;
+    height: 170px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS2 .RX580 {
+    width: 300px;
+    height: 370px;
+  }
+  .bodyGPUS .mainGPUS .OTRAS2 .SeriesRX5000 {
+    width: 300px;
+    height: 300px;
+  }
+  .bodyGPUS .mainGPUS .RTX12 .RTX1000 {
+    width: 300px;
+    height: 150px;
+  }
+  .bodyGPUS .mainGPUS .RTX12 .RTX2000 {
+    width: 300px;
+    height: 225px;
+  }
+  .bodyGPUS .mainGPUS .RTX34 .RTX3000 {
+    width: 300px;
+    height: 175px;
+  }
+  .bodyGPUS .mainGPUS .RTX34 .RTX4000 {
+    width: 320px;
+    height: 200px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia .GTX660 {
+    width: 300px;
+    height: 250px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia .GTX970 {
+    width: 300px;
+    height: 250px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia2 .RTXA4500 {
+    width: 300px;
+    height: 300px;
+  }
+  .bodyGPUS .mainGPUS .otrasNvidia2 .RTX2080 {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+/* MQ Footer */
+@media (max-width: 600px) {
+  footer .LogoWhatsapp {
+    width: 30px;
+    height: 30px;
+  }
+  footer .LogoInstagram {
+    width: 55px;
+    height: 35px;
+    bottom: 27px;
+    right: 55px;
+  }
+}
