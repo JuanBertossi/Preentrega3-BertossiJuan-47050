@@ -60,7 +60,7 @@ class Carrito {
     localStorage.setItem("carrito", JSON.stringify(this.carrito));
     this.listar();
     Toastify({
-      text: `Se a agregado "${producto.nombre}" de su Carrito`,
+      text: `Se ha agregado "${producto.nombre}" de su Carrito`,
       gravity: "bottom",
       position: "center",
       style: {
@@ -81,7 +81,7 @@ class Carrito {
     localStorage.setItem("carrito", JSON.stringify(this.carrito));
     this.listar();
     Toastify({
-      text: `Se a quitado "${productoQuitado.nombre}" de su Carrito`,
+      text: `Se ha quitado "${productoQuitado.nombre}" de su Carrito`,
       gravity: "bottom",
       position: "center",
       style: {
