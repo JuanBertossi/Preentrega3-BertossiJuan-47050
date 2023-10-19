@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "RX570",
+    "precio": 50000,
+    "imagen": "../assets/img/RX-Series-500.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "W6600",
+    "precio": 30000,
+    "imagen": "../assets/img/RTX-W6600.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "RX6600",
+    "precio": 100000,
+    "imagen": "../assets/img/RX-Series-6000.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "AMDVII",
+    "precio": 90000,
+    "imagen": "../assets/img/amd-vii.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "W7900",
+    "precio": 80000,
+    "imagen": "../assets/img/amd-w7900.webp"
+  },
+  {
+    "id": 6,
+    "nombre": "RX7900XT",
+    "precio": 200000,
+    "imagen": "../assets/img/RX-Series-7000.webp"
+  },
+  {
+    "id": 7,
+    "nombre": "RX580",
+    "precio": 40000,
+    "imagen": "../assets/img/RX-580.webp"
+  },
+  {
+    "id": 8,
+    "nombre": "RX5700",
+    "precio": 90000,
+    "imagen": "../assets/img/RX-Series-5000.webp"
+  },
+  {
+    "id": 9,
+    "nombre": "GTX1080",
+    "precio": 10000,
+    "imagen": "../assets/img/rtx-series-1000.webp"
+  },
+  {
+    "id": 10,
+    "nombre": "RTX2060",
+    "precio": 50000,
+    "imagen": "../assets/img/rtx-series-2000.webp"
+  },
+  {
+    "id": 11,
+    "nombre": "RTX3080",
+    "precio": 100000,
+    "imagen": "../assets/img/rtx-series-3000.webp"
+  },
+  {
+    "id": 12,
+    "nombre": "RTX4090",
+    "precio": 300000,
+    "imagen": "../assets/img/rtx-series-4000.webp"
+  },
+  {
+    "id": 13,
+    "nombre": "GTX660",
+    "precio": 5000,
+    "imagen": "../assets/img/gtx-660.webp"
+  },
+  {
+    "id": 14,
+    "nombre": "GTX970",
+    "precio": 15000,
+    "imagen": "../assets/img/gtx970.webp"
+  },
+  {
+    "id": 15,
+    "nombre": "RTXA4500",
+    "precio": 30000,
+    "imagen": "../assets/img/rtx-a4500.webp"
+  },
+  {
+    "id": 16,
+    "nombre": "RTX2080",
+    "precio": 100000,
+    "imagen": "../assets/img/RTX2080.webp"
+  }
+]

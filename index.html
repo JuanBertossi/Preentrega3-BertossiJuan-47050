@@ -8,8 +8,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Su GPU</title>
+    <title>Venta GPU</title>
 </head>
 
 <body class="bodyGPUS">
@@ -39,7 +40,6 @@
             </nav>
         </section>
 
-
         <button id="agregarProducto" class="btn me-3 me-3 float-end" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
             <img class="imagenCarrito" src="./assets/img/carrito.png" alt="Carrito de compras">
@@ -53,8 +53,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <!-- Contenido del carrito -->
-                <div id="productosCarrito" class="carritoProductos"></div>
+                <div id="carrito" class="carritoProductos"></div>
+                <div id="scroll"></div>
+                <span id="cantidadProductos">0</span>
                 <div id="totalCarrito" class="carritoTotal"></div>
             </div>
         </div>
@@ -65,127 +66,10 @@
         <h1 class="ParrafoGPUS">
             Seleccione una GPU y realize su compra.
         </h1>
-        <section class="RX5">
-            <article>
-                <img class="SeriesRX500" src="./assets/img/RX-Series-500.webp" alt="Series RX 500"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RX 570 4gb VRAM-DDR5-PRECIO:$50.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-1"
-                    data-precio="50000" data-nombre="RX 570 4gb VRAM-DDR5">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="W6600" src="./assets/img/RTX-W6600.webp" alt="W6600" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">W6600 8gb VRAM-DDR6-PRECIO:$30.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-2"
-                    data-precio="30000" data-nombre="W6600 8gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-        </section>
-        <section class="RX67">
-            <article>
-                <img class="SeriesRX6000" src="./assets/img/RX-Series-6000.webp" alt="Series RX 6000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RX6600 8gb VRAM-PRECIO:$100.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-3"
-                    data-precio="100000" data-nombre="RX6600 8gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="AMDVII" src="./assets/img/amd-vii.webp" alt="AMD VII" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">AMDVII 16gb VRAM-PRECIO:$90.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-4"
-                    data-precio="90000" data-nombre="AMDVII 16gb VRAMS-DDR6">Añadir al carrito</button>
-                <article>
-        </section>
-        <section class="OTRAS">
-            <article>
-                <img class="W7900" src="./assets/img/amd-w7900.webp" alt="W7900" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">W7900 48gb VRAM-PRECIO:$80.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-5"
-                    data-precio="80000" data-nombre="W7900 48gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="SeriesRX7000" src="./assets/img/RX-Series-7000.webp" alt="Series RX 7000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RX7900 XT 24gb VRAM-PRECIO:$200.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-6"
-                    data-precio="200000" data-nombre="RX7900 XT 24gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-        </section>
-        <section class="OTRAS2">
-            <article>
-                <img class="RX580" src="./assets/img/RX-580.webp" alt="RX 580" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RX580 8gb VRAM-DDR5-PRECIO:$40.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-7"
-                    data-precio="40000" data-nombre="RX580 8gb VRAM-DDR5">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="SeriesRX5000" src="./assets/img/RX-Series-5000.webp" alt="Series RX 5000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RX5700 8gb VRAM-DDR6-PRECIO:$90.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-8"
-                    data-precio="90000" data-nombre="RX5700 8gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-        </section>
-        <section class="RTX12">
-            <article>
-                <img class="RTX1000" src="./assets/img/rtx-series-1000.webp" alt="RTX Series 1000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">GTX1080 TI 11gb VRAM-PRECIO:$10.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-9"
-                    data-precio="10000" data-nombre="GTX1080 TI 11gb VRAM-DDR5">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="RTX2000" src="./assets/img/rtx-series-2000.webp" alt="RTX Series 2000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RTX2060 6gb VRAM-PRECIO:$50.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-10"
-                    data-precio="50000" data-nombre="RTX2060 6gb VRAM-DDR5">Añadir al carrito</button>
-            </article>
-        </section>
-        <section class="RTX34">
-            <article>
-                <img class="RTX3000" src="./assets/img/rtx-series-3000.webp" alt="RTX Series 3000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RTX3080 10gb VRAM-PRECIO:$100.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark" id="agregar-carrito-btn-11" data-precio="100000"
-                    data-nombre="RTX3080 10gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="RTX4000" src="./assets/img/rtx-series-4000.webp" alt="RTX Series 4000"
-                    data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RTX4090 24gb VRAM-PRECIO:$300.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-12"
-                    data-precio="300000" data-nombre="RTX4090 24gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-        </section>
-        <section class="otrasNvidia">
-            <article>
-                <img class="GTX660" src="./assets/img/gtx-660.webp" alt="GTX660" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">GTX660 2gb VRAM-PRECIO:$5.000</p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-13"
-                    data-precio="5000" data-nombre="GTX660 2gb VRAM-DDR4">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="GTX970" src="./assets/img/gtx970.webp" alt="GTX970" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">GTX970 4gb VRAM-DDR5-PRECIO:$15.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-14"
-                    data-precio="15000" data-nombre="GTX970 4gb VRAM-DDR5">Añadir al carrito</button>
-            </article>
-        </section>
-        <section class="otrasNvidia2">
-            <article>
-                <img class="RTXA4500" src="./assets/img/rtx-a4500.webp" alt="RTX A4500" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RTX A4500 20gb VRAM-DDR6-PRECIO:$30.000</p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-15"
-                    data-precio="30000" data-nombre="RTX A4500 20gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-            <article>
-                <img class="RTX2080" src="./assets/img/RTX2080.webp" alt="RTX2080" data-aos="zoom-in-down">
-                <p class="descripcion-imagen">RTX2080 8gb VRAM-DDR6 PRECIO:$100.000 </p>
-                <button class="agregar-carrito-btn btn btn-dark btn btn-primary btn-lg" id="agregar-carrito-btn-16"
-                    data-precio="100000" data-nombre="RTX2080 8gb VRAM-DDR6">Añadir al carrito</button>
-            </article>
-        </section>
+        <div id="productos">
+        </div>
     </main>
+
 
     <!-- Pie De Pagina -->
     <footer>
@@ -205,6 +89,7 @@
     <script>
         AOS.init();
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
